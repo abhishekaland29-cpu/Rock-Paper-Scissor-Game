@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+    <div class="navi">
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <img src="lottie/rock-paper-scissors.png" class="logo-img" alt="RPS Logo">
+          <span>RPS</span>
+        </a>
+      </div>
+
+      <div class="nav-element">
+        <a href="" class="nav-home"><span>Home</span></a>
+        <a href="" class="nav-About"><span>About us</span></a>
+        <a href="" class="nav-log"><span>Login</span></a>
+     </div>
+    </div>
+  </nav>
+
+    <div class="user">
+        <div class="message">
+            <h2 id="main-message">Welcome to Rock Paper Scissors!</h2>
+            <h3>Make your choice and test your luck.</h3>
+            <h3>👉 Choose your move to start</h3>
+        </div>
+        <div class="choices">
+            <a href="javascript:void(0)" class="sm_image" id="Rock">
+             <img src="lottie\rocks.png" class="choise_img" alt="Rock">
+             <h3>Rock</h3>
+           </a>
+           <a href="javascript:void(0)" class="sm_image" id="Paper">
+             <img src="lottie\Screenshot 2026-01-08 003449.png" class="choise_img" alt="Paper">
+             <h3>Paper</h3>
+           </a>
+           <a href="javascript:void(0)" class="sm_image" id="Scissors">
+             <img src="lottie\scissors.png" class="choise_img" alt="Scissors">
+             <h3>Scissors</h3>
+           </a>
+        </div>
+    </div>
+
+    <div id="scoreboard" class="scoreboard">
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+        <p>Draws: <span id="draws">0</span></p>
+        <button id="reset-btn" style="margin-top: 10px; padding: 10px 20px; cursor: pointer;">Reset Game</button>
+    </div>
+
+    <footer class="footer">
+        <div class="foooter">
+            <div class="footer-content">
+             <div class="footer-about">
+                 <h3>Rock Paper Scissor Game</h3>
+                 <p>Test your luck and strategy in the classic Rock Paper Scissors game!</p>
+             </div>
+             <div class="footer-links">
+               <h4>Quick Links</h4>
+               <ul class="ul1">
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">About us</a></li>
+                 <li><a href="login.html">Login</a></li>
+               </ul>
+             </div>
+             <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: support@rps.com</p>
+                <p>Phone: +91 12345 67890</p>
+             </div>
+           </div>
+           <div class="footer-bottom">
+             <p>&copy; 2025 Rock Paper Scissors Game. All Rights Reserved.</p>
+           </div>
+        </div>
+    </footer>
+
+    <script src="rps.js"></script>
+</body>
+</html>

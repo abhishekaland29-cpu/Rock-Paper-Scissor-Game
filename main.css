@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Arial, sans-serif;   
+}
+body{
+  background: linear-gradient(#111, #222222, #333);
+}
+/* Navbar */
+nav {
+   width: 100%;
+   background-color: #111111;
+   border-bottom: 1px solid #e5e5e5;
+   position: sticky;
+   top: 0;
+   z-index: 10000;
+   padding: 8px 20px;
+}
+/* NAV CONTAINER */
+.navi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-img{
+    width: 50px;
+    height: auto;
+}
+.logo span{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.logo-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: border 0.2s ease, transform 0.2s ease;
+}
+.logo-link:hover {
+    opacity: 0.9;
+    border: 2px solid #ccc;
+    transform: scale(1.05);
+}
+/* NAV LINK */
+.nav-element a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 6px 8px;
+    transition: 0.2s ease;
+}
+.nav-element a:hover{
+    color: white;
+    background: #cccccccc;
+    border-radius: 4px;
+}
+/* RESPONSIVE (Mobile) */
+@media (max-width : 768px) {
+ 
+  body{
+
+   }
+
+   
+   nav{
+      padding:2%;
+   }
+    .nav-search{
+      overflow: hidden;
+      display: none;
+    }
+    .nav-element{
+        display: flex;
+        flex-direction: column; 
+        position: absolute; 
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        border-top: 1px solid #e5e5e5;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+}
+.navi:hover .nav-element {
+        opacity: 1;
+        visibility: visible;
+}
+.nav-element a {
+        padding: 10px 20px;
+        font-size: 18px;
+ }
+
+ /* welcome section */
+
+ .jack{
+    font-size: 4rem;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    color: #ccc;
+ }
+ .container{
+    color: #ffffff;
+    justify-self: center;
+ }
+ .start{
+    padding: 15px 50px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    align-items: center;
+    justify-self: center;
+    margin-top: 20px;
+    margin-left: 20rem;
+    transition: 0.2s ease;
+ }
+ .start:hover {
+    opacity: 0.9;
+    border: 2px solid #ccc;
+    transform: scale(1.05);
+}
+.choices{
+    text-decoration: none;
+}
+ .button{
+    justify-self: center;
+ }
+ .Welcome{
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 100px;
+ }
+ 
+ /* htp section */
+ .HTP{
+    color: white;
+    margin-top: 200px;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        width: 700px;
+        margin-top: 50px;
+        font-size: 1.3rem;
+    }
+ }
+
+
+ /* follow us section */
+
+ .follow_us{
+    justify-self: center;
+    align-items: center;
+    margin-top: 200px;
+    display: flex;
+ }
+ .follow{
+    display: flex;
+    gap: 3rem;
+    color: white;
+    .bhik{
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+ }
+ /* Footer Section Begins */
+/* Footer Styles */
+.footer {
+    background-color: #000000; /* Core black background */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px 0;
+    font-family: Arial, sans-serif; /* Assuming a default font; adjust as needed */
+    margin-top: 50px;
+}
+
+.foooter {
+    max-width: 1200px; /* Optional: Set a max width for the footer content */
+    margin: 0 auto; /* Center the footer container */
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribute sections: links left, about center, contact right */
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-bottom: 20px;
+}
+
+.footer-about {
+    flex: 1; /* Take equal space, but since it's center, this will be in the middle */
+    text-align: center; /* Center the about section content */
+    margin: 0 20px; /* Add some margin for spacing */
+}
+
+.footer-links {
+    flex: 1; /* Take equal space, positioned on the left */
+    text-align: left; /* Align links to the left */
+}
+
+.footer-contact {
+    flex: 1; /* Take equal space, positioned on the right */
+    text-align: right; /* Align contact info to the right */
+}
+
+.footer-about h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.footer-about p {
+    margin: 0;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.ul1 {
+    list-style: none; /* Remove default list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.ul1 li {
+    margin-bottom: 5px;
+}
+
+.ul1 li a {
+    color: #ffffff; /* White links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.ul1 li a:hover {
+    color: #cccccc; /* Light gray on hover for better UX */
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    text-align: center; /* Center the copyright text */
+    border-top: 1px solid #333333; /* Optional: Add a subtle border */
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack sections vertically on mobile */
+        text-align: center; /* Center all content on mobile */
+    }
+    
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        margin: 10px 0; /* Adjust margins for mobile */
+    }
+}
